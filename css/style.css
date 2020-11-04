@@ -1,0 +1,626 @@
+*{
+	padding: 0px;
+	margin:0px;
+}
+body{
+	font-family: 'Montserrat', sans-serif !important;
+}
+h2{
+    color: #204f87;
+    font-size: 30px;
+    /* letter-spacing: 6px; */
+    text-transform: uppercase;
+}
+h1{
+    font-size: 65px;
+    text-align: center;
+}
+p{
+    color: #b0b0b1;
+    font-size: 14px;
+}
+img{
+    max-width: 100%;
+    height: 100%;
+}
+h3{}
+h4{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+.container{
+	width: 1140px;
+	margin: auto;
+}
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+}
+/*header start*/
+header{
+    padding: 40px;
+}
+header .flex{
+    display: flex;
+}
+.logo{
+    flex: 0 0 20%;
+}
+.logo h2 a{
+	color: #204f87;
+	letter-spacing: 3px;
+}
+nav{
+    flex: 0 0 80%;
+    /* float: right; */
+}
+nav ul{
+    float: right;
+}
+nav ul .flex{}
+nav ul li{
+    padding: 0px 10px;
+}
+nav ul li a{
+    color: #204f87;
+    text-transform: uppercase;
+    font-size: 13px;
+    /* font-family: fantasy; */
+    font-weight: 600;
+}
+header a:hover{
+	color: #f15f2b;
+}
+
+/*header end*/
+/*********************************************banner start*********************************************/
+
+.banner{
+
+position: relative;
+
+height: 500px;
+
+overflow: hidden;
+}
+.banner img{
+
+position: absolute;
+
+
+}
+.banner h1{
+	
+position: absolute;
+	
+top: 50%;
+	
+left: 50%;
+	
+transform: translate(-50%, -50%);
+	
+color: white;
+	
+letter-spacing: 2px;
+	
+font-family: sans-serif !important;
+	
+font-weight: 500;
+}
+
+/*********************************************banner end*********************************************/
+
+
+/*********************************************about start*********************************************/
+
+.about{
+
+margin: 69px;
+}
+.about .flex{
+    display: flex;
+}
+.about .about-content{
+    flex: 0 0 60%;
+    float: left;
+    margin: 0px 0px;
+    padding: 0px 0px;
+    position: relative;
+}
+.about .about-content h2{
+    margin: 100px 75px 20px;
+    font-size: 35px;
+    letter-spacing: 0px;
+    position: relative;
+}
+.about .about-content p{
+    padding: 0px 75px 14px;
+    margin-top: 2px;
+    font-size: 15px;
+    color: #b0b0b1;
+    line-height: 20px;
+}
+.about .about-img{
+    margin-top: 58px;
+    flex: 0 0 40%;
+    box-sizing: border-box;
+    float: right;
+}
+.about img{
+    height: 450px;
+    margin-left: 40px;
+}
+
+.about .about-content h2::before{
+	content: '';
+	background-color: #f15f2b;
+	height: 5px;
+	position: absolute;
+	top: -50%;
+	width: 10%;
+	left: 0%;
+	transition: 0.6s linear;
+	display: block;
+}
+.about .about-content h2:hover::before{
+	left: 100px;
+	opacity: 0;
+}
+
+
+
+
+/*********************************************about end*********************************************/
+
+/*********************************************feature start*********************************************/
+
+/*********************************************feature end*********************************************/
+
+.feature{
+	background-image: url(../images/featurebg.png);
+	background-position: 375px 200px;
+	background-repeat: no-repeat;
+	position: relative;
+	padding: 63px 0px 86px;
+	/* overflow: hidden; */
+	background-color: #f7f8f8;
+	margin: 120px 0px 0px;
+}
+.feature .flex{
+	/* display: flex; */
+}
+.feature .features{
+
+display: flex;
+
+justify-content: center;
+
+/* align-items: center; */
+
+margin: auto;
+}
+.feature .features h2{
+
+top: 11%;
+
+position: absolute;
+
+left: 50%;
+
+margin-bottom: 0px;
+
+transform: translate(-50%, -11%);
+
+font-size: 35px;
+
+margin: 0px 0px 0px 0px;
+}
+
+.feature .features h2::before{
+	content: '';
+	background-color: #f15f2b;
+	height: 5px;
+	position: absolute;
+	top: -50%;
+	width: 20%;
+	left: 50%;
+	transition: 0.6s linear;
+	display: block;
+	transform: translate(-50%,50%);
+
+}
+.feature .features h2:hover::before{
+	opacity: 0;
+}
+.feature-content {
+    flex: 0 0 33.33%;
+    position: relative;
+    align-items: center;
+    display: block;
+    justify-content: center;
+    margin: 150px 20px 0px;
+    height: 450px;
+    width: 300px;
+}
+.feature-content img{
+
+/* max-width: 100%; */
+
+/* padding: 0px 15px; */
+
+/* box-sizing: border-box; */
+
+width: 100%;
+}
+.feature-content h4{
+    font-size: 26px;
+    position: absolute;
+    top: 40%;
+    width: 70%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    opacity: 0;
+    transition-duration: 0.5s;
+    z-index: 1;
+}
+.feature-content::after{
+	content: '';
+	background-color:/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c539e+0,2c539e+89,2c539e+100&1+0,0.3+100;Blue+3D+%232 */
+background: -moz-linear-gradient(bottom,  hsla(219,56%,40%,1) 0%, hsla(219,56%,40%,0.38) 89%, hsla(219,56%,40%,0.3) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(bottom,  hsl(233deg 26% 41% / 54%) 0%,hsla(219,56%,40%,0.38) 89%,hsla(219,56%,40%,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to top,  hsla(219,56%,40%,1) 0%,hsla(219,56%,40%,0.38) 89%,hsla(219,56%,40%,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#4d2c539e',GradientType=0 ); /* IE6-9 */
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 0%;
+	opacity: 0;
+	transition-duration: 0.5s;
+}
+.feature-content:hover::after{
+	opacity: 1;
+	height: 100%;
+}
+.feature-content:hover h4{
+
+opacity: 1;
+top: 50%;
+}
+.feature-content i{
+    position: absolute;
+    top: 85%;
+    left: 30%;
+    opacity: 0;
+    color: white;
+    transform: translate(-40%,85%);
+    transition-duration:0.5s;
+    z-index: 1;
+}
+.feature-content:hover i{
+opacity: 1;
+left: 50%;
+}
+/*****************************************feature end******************************/
+
+/*****************************************attorny strt******************************/
+.attorny{
+	background-image: url(../images/attonybg.png);
+	padding: 120px 0px;
+	margin-top: 0px;
+}
+.attorny .flex{
+    
+}
+.attornyes{
+    
+width: 639px;
+    
+margin: auto;
+    
+/* float: right; */
+}
+.attorny-content{
+    display: flex;
+    /* position: relative; */
+}
+.attorny-details{
+    flex: 0 0 40%;
+    padding: 20px 0px 0px 40px;
+    position: relative;
+}
+.attorny-details-content{
+	
+
+	
+margin: 275px 0px;
+	
+padding: 10px 0px;
+	
+height: 300px;
+}
+.attorny-details-content h2{
+	font-size: 35px;
+	color: white;
+	width: 210px;
+	line-height: 1.3;
+	position: relative;
+}
+.attorny-details-content h2::before{
+	content: '';
+	background-color: #f15f2b;
+	height: 5px;
+	position: absolute;
+	top: -30%;
+	width: 30%;
+	left: 0%;
+	transition: 0.6s linear;
+	display: block;
+}
+.attorny-details-content h2:hover::before{
+	opacity: 0;
+	left: 100px;
+}
+
+
+.attorny-details-content p{
+    padding: 35px 112px 35px 0px;
+    
+}
+.attorny-details-content a{color: #f2622c;/* margin: 39px 0px 0px; */box-sizing: border-box;}
+.attorny-img{
+    flex: 0 0 46%;
+    margin: 23px 18px 20px 0px;
+    position: relative;
+    height: 400px;
+}
+.attorny-img img{}
+.attorny-img h5{
+    font-size: 28px;
+    position: absolute;
+    z-index: 1;
+    color: white;
+    bottom: 0;
+    left: 8%;
+    width: 200px;
+    line-height: 1.7;
+    opacity: 0;
+    transition-duration: 0.5s;
+} 
+.attorny-img:hover h5{
+	opacity: 1;
+	bottom: 10%;
+
+}
+.attorny-img::after{
+	content:'';
+	background-color: /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2c539e+0,2c539e+89,2c539e+100&1+0,0.3+100;Blue+3D+%232 */
+background: -moz-linear-gradient(bottom,  hsla(219,56%,40%,1) 0%, hsla(219,56%,40%,0.38) 89%, hsla(219,56%,40%,0.3) 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(bottom,  hsl(233deg 26% 41% / 54%) 0%,hsla(219,56%,40%,0.38) 89%,hsla(219,56%,40%,0.3) 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to top,  hsla(219,56%,40%,1) 0%,hsla(219,56%,40%,0.38) 89%,hsla(219,56%,40%,0.3) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2c539e', endColorstr='#4d2c539e',GradientType=0 );
+	/* height: 100%; */
+	width: 100%;
+	position: absolute;
+	left: 0;
+	opacity: 0;
+	bottom: 0;
+	height: 0%;
+	transition-duration: 0.5s;
+}
+.attorny-img:hover::after{
+
+	opacity: 1;
+	height: 100%;
+}
+
+
+/*****************************************attorny end******************************/
+
+/*****************************************language start******************************/
+.languages{
+
+padding: 120px;
+
+}
+	.languages h2{
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+}
+.languages h2::before{
+	content: '';
+	background-color: #f15f2b;
+	height: 5px;
+	position: absolute;
+	top: -55%;
+	width: 7%;
+	left: 50%;
+	transition: 0.6s linear;
+	display: block;
+	transform: translate(-50%,55%);
+	/* margin-bottom: -1px; */
+}
+.languages h2:hover::before{
+	opacity: 0;
+}
+.languages .flex{
+
+display: flex;
+}
+.languages .language{
+    flex: 0 0 25%;
+    padding: 67px 0px;
+}
+.languages .language h4{
+    color: #204f87;
+    text-align: revert;
+    margin-bottom: 10px;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+.languages .language p{
+    box-sizing: border-box;
+    padding: 10px 13px 12px 1px;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+.languages .language a{
+    font-size: 18px;
+    font-weight: 600;
+    color:#f15f2b ;
+}
+.languages .language a:hover{
+	color:#204f87; 
+}
+
+/*****************************************language end******************************/
+/*****************************************contact start******************************/
+.contuct{
+
+background: #28377e;
+
+height: auto;
+
+margin: 0px;
+
+padding: 109px;
+}
+.contuct h2{
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    color: #ffff;
+}
+.contuct h2::before{
+	content: '';
+	background-color: #f15f2b;
+	height: 5px;
+	position: absolute;
+	top: -55%;
+	width: 7%;
+	left: 50%;
+	transition: 0.6s linear;
+	display: block;
+	transform: translate(-50%,55%);
+	/* margin-bottom: -1px; */
+}
+.contuct h2:hover::before{
+	opacity: 0;
+}
+.contuct .flex{
+    display: flex;
+}
+.contact-form{
+    margin: auto;
+    padding: 0px;
+    width: 500px;
+}
+.contact-form form{
+    padding: 30px 0;
+    box-sizing: border-box;
+    border: 0;
+    position: relative;
+}
+.contact-form form .text-box{
+
+width: 100%;
+
+margin: auto;
+
+p
+
+border-bottom: 6px solid #1a203e52;
+
+/* border: 0; */
+
+border-bottom: 2px solid #717aa7;
+
+color: white;
+}
+.text-box input,textarea{
+	width: 100%;
+	padding: 18px 0px;
+	margin-bottom: 7px;
+	background: #28377e0f;
+	border: 0;
+	outline: none;
+	color: white !important;
+}
+form a{
+	color: white;
+	text-align: center;
+	border: 1px solid #f15f2b;
+	padding: 15px 50px;
+	position: absolute;
+	bottom: 0px;
+	left: 50%;
+	transform: translate(-50%, 40px);
+	background: #f15f2b;
+	transition: 0.3s;
+}
+form a:hover{
+	background-color: #204f87;
+	border: 1px solid #204f87;
+	box-shadow: rgb(0,0,0,2);
+
+
+}
+footer{
+	background-color: #0c1234;
+	pading: 47px;
+	padding: 50px 0px;
+}
+
+.copyright{
+
+flex: 0 0 30%;
+}
+.social{
+	
+flex: 0 0 70%;
+}
+.social ul{
+	float: right;
+}
+.social ul li{
+    padding: 0px 20px;
+}
+.social ul li a{
+    
+    padding: 7px 8px;
+    border-radius: 2px;
+    background-color: #72dbf1;
+	border:1px solid #72dbf1;
+	color: white;
+}
+
+.social ul li a:hover {
+	
+border: 1px solid white;
+background-color:white;
+color:#72dbf1;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*****************************************contact end******************************/
+
